@@ -24,7 +24,6 @@ QBConfig.Player.Bloodtypes = {
     "AB+",
     "AB-",
     "O+",
-    "O-",
 }
 
 QBConfig.Server = {} -- General server config
