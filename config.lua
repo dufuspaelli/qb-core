@@ -14,8 +14,8 @@ QBConfig.Money.PayCheckSociety = false -- If true paycheck will come from the so
 QBConfig.Player = {}
 QBConfig.Player.MaxWeight = 120000 -- Max weight a player can carry (currently 120kg, written in grams)
 QBConfig.Player.MaxInvSlots = 41 -- Max inventory slots for a player
-QBConfig.Player.HungerRate = 4.2 -- Rate at which hunger goes down.
-QBConfig.Player.ThirstRate = 3.8 -- Rate at which thirst goes down.
+QBConfig.Player.HungerRate = 0 -- Rate at which hunger goes down.
+QBConfig.Player.ThirstRate = 0 -- Rate at which thirst goes down.
 QBConfig.Player.Bloodtypes = {
     "A+",
     "A-",
