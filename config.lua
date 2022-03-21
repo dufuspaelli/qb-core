@@ -38,9 +38,9 @@ QBConfig.Server.PermissionList = {} -- permission list
 QBConfig.Notify = {}
 
 QBConfig.Notify.NotificationStyling = {
-    group = false, -- Allow notifications to stack with a badge instead of repeating
-    position = "right", -- top-left | top-right | bottom-left | bottom-right | top | bottom | left | right | center
-    progress = true -- Display Progress Bar
+    group = true, -- Allow notifications to stack with a badge instead of repeating
+    position = "left", -- top-left | top-right | bottom-left | bottom-right | top | bottom | left | right | center
+    progress = false -- Display Progress Bar
 }
 
 -- These are how you define different notification variants
