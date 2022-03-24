@@ -2,7 +2,7 @@
 -- New method for checking if logged in across all scripts (optional)
 -- if LocalPlayer.state['isLoggedIn'] then
 RegisterNetEvent('QBCore:Client:OnPlayerLoaded', function()
-    ShutdownLoadingScreenNui()
+   -- ShutdownLoadingScreenNui()
     LocalPlayer.state:set('isLoggedIn', true, false)
     if QBConfig.Server.pvp then
         SetCanAttackFriendly(PlayerPedId(), true, false)
