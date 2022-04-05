@@ -1,5 +1,11 @@
 -- Event Handler
 
+AddEventHandler('chatMessage', function(source, _, message)
+    if string.sub(message, 1, 1) == '/' then
+        CancelEvent()
+        return
+    end
+
 AddEventHandler('playerDropped', function()
     local src = source
     if not QBCore.Players[src] then return end
