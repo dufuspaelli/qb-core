@@ -5,6 +5,7 @@ AddEventHandler('chatMessage', function(source, _, message)
         CancelEvent()
         return
     end
+end)
 
 AddEventHandler('playerDropped', function()
     local src = source
