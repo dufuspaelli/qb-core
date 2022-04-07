@@ -165,7 +165,7 @@ end
 
 -- Paychecks (standalone - don't touch)
 
-function PaycheckInterval()
+--[[ function PaycheckInterval()
     if next(QBCore.Players) then
         for _, Player in pairs(QBCore.Players) do
             if Player then
@@ -194,7 +194,7 @@ function PaycheckInterval()
         end
     end
     SetTimeout(QBCore.Config.Money.PayCheckTimeOut * (60 * 1000), PaycheckInterval)
-end
+end ]]
 
 -- Callbacks
 

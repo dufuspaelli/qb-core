@@ -72,16 +72,14 @@ end
 
 QBShared.StarterItems = {
     ['phone'] = { amount = 1, item = 'phone' },
-    ['id_card'] = { amount = 1, item = 'id_card' },
-    ['driver_license'] = { amount = 1, item = 'driver_license' },
-    ['lockpick'] = { amount = 20, item = 'lockpick'}
+    ['lockpick'] = { amount = 10, item = 'lockpick'}
 }
 
 QBShared.PoliceStarterItems = {
     ['weapon_stungun'] = { amount = 1, item = 'weapon_stungun'},
     ['radio'] = { amount = 1, item = 'radio'},
     ['handcuffs'] = { amount = 5, item = 'handcuffs'},
-    ['nightstick'] = { amount = 1, item = 'nightstick'}
+    ['weapon_nightstick'] = { amount = 1, item = 'nightstick'}
 }
 
 QBShared.MaleNoGloves = {
