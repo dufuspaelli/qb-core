@@ -408,6 +408,7 @@ end
 function QBCore.Functions.DeleteVehicle(vehicle)
     SetEntityAsMissionEntity(vehicle, true, true)
     DeleteVehicle(vehicle)
+    TriggerEvent('persistent-vehicles/forget-vehicle', veh)
 end
 
 function QBCore.Functions.GetPlate(vehicle)
