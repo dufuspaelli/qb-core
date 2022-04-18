@@ -399,6 +399,15 @@ function QBCore.Player.CreatePlayer(PlayerData)
         return items
     end
 
+    function self.Functions.GetAmmoByType(type)
+        type = tostring(type):lower()
+        local slot = QBCore.Player.GetFirstSlotByAmmoType(self.PlayerData.items, type)
+        if slot then
+            return self.PlayerData.items[slot]
+        end
+        return nil
+    end
+
     function self.Functions.SetCreditCard(cardNumber)
         self.PlayerData.charinfo.card = cardNumber
         self.Functions.UpdatePlayerData()
@@ -602,6 +611,17 @@ function QBCore.Player.GetFirstSlotByItem(items, itemName)
     end
     return nil
 end
+
+function QBCore.Player.GetFirstSlotByAmmoType(items, type)
+    if not items then return nil end
+    for slot, item in pairs(items) do
+        if item.type:lower() == type:lower() then
+            return tonumber(slot)
+        end
+    end
+    return nil
+end
+
 
 function QBCore.Player.CreateCitizenId()
     local UniqueFound = false
